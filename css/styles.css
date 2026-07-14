@@ -1,73 +1,147 @@
+:root {
+    color-scheme: dark;
+    --bg: #07131f;
+    --surface: rgba(7, 19, 31, 0.82);
+    --surface-strong: rgba(8, 24, 37, 0.96);
+    --text: #f3f7fb;
+    --muted: #dce5ee;
+    --accent: #52d0ff;
+    --accent-2: #7cf2b2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    min-height: 100vh;
+    color: var(--text);
+    background: linear-gradient(135deg, rgba(2, 6, 12, 0.92) 0%, rgba(7, 16, 27, 0.84) 45%, rgba(10, 24, 35, 0.82) 100%), url("../BadmintonMatchCoach.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
+.page-shell {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
 }
 
-h1 {
+.hero {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background: var(--surface-strong);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.3rem;
+    color: var(--accent);
+}
+
+.hero p {
     margin: 0;
-    font-size: 2.5em;
-}
-
-nav {
-    margin: 20px 0;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--muted);
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    display: grid;
+    gap: 1rem;
 }
 
 .card {
-    background: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    padding: 1.25rem 1.4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.button {
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    color: var(--accent-2);
+}
+
+.card p,
+.card li {
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.panel h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+ol,
+ul {
+    padding-left: 1.2rem;
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--muted);
+    padding: 0.75rem 0 0;
+}
+
+.nav-links {
+    margin-top: 0.8rem;
+}
+
+.nav-links a {
     display: inline-block;
-    font-size: 1em;
-    color: #ffffff;
-    background: #35424a;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    color: var(--accent);
+    font-weight: bold;
     text-decoration: none;
 }
 
-.button:hover {
-    background: #2c3e50;
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .page-shell {
+        padding: 16px 12px 32px;
+    }
+
+    .hero {
+        padding: 1.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
