@@ -23,16 +23,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 .page-shell {
     max-width: 980px;
     margin: 0 auto;
-    padding: 24px 20px 40px;
+    padding: 24px clamp(14px, 3vw, 24px) 40px;
 }
 
 .hero {
-    padding: 2rem;
+    padding: clamp(1.2rem, 3vw, 2rem);
     margin-bottom: 1rem;
     background: var(--surface-strong);
     border: 1px solid rgba(255, 255, 255, 0.14);
@@ -42,13 +44,13 @@ body {
 
 .hero h1 {
     margin: 0 0 0.5rem;
-    font-size: 2.3rem;
+    font-size: clamp(1.7rem, 4vw, 2.3rem);
     color: var(--accent);
 }
 
 .hero p {
     margin: 0;
-    font-size: 1.05rem;
+    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
     line-height: 1.6;
     color: var(--muted);
 }
@@ -62,7 +64,7 @@ body {
     background: var(--surface);
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 16px;
-    padding: 1.25rem 1.4rem;
+    padding: clamp(1rem, 2.5vw, 1.4rem);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -132,16 +134,47 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 700px) {
     .page-shell {
         padding: 16px 12px 32px;
     }
 
     .hero {
-        padding: 1.2rem;
+        padding: 1.1rem;
     }
 
-    .grid {
-        grid-template-columns: 1fr;
+    .card {
+        border-radius: 14px;
+    }
+
+    ol,
+    ul {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .card h2 {
+        font-size: 1.1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
     }
 }
