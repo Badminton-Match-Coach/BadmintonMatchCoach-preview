@@ -18,27 +18,25 @@
     <main class="app-shell">
       <section class="play-section">
         <h1>Privacy Policy</h1>
-        <p>Badminton Match Coach respects your privacy. This policy explains what data the app collects, how it is stored, and how it is used.</p>
+        <p>Badminton Match Coach respects your privacy. This policy explains what data the Android app collects, how it is stored, and how it is used.</p>
 
         <h2>Data collected</h2>
         <ul>
-          <li>Match event details entered by users, including rally outcomes, shot types, and scoring events.</li>
-          <li>Match metadata such as player names, competition details, and session timestamps.</li>
-          <li>Local session state used to recover match progress after reloads or app restarts.</li>
-          <li>Optional .BmMatch files opened or exported by the user.</li>
+          <li>Match event details entered by users, including rally outcomes, shot types, and scoring events — kept in the app's runtime memory by default.</li>
+          <li>Match metadata such as player names, competition details, and session timestamps — kept in the app's runtime memory by default.</li>
+          <li>Local session state used to recover match progress while the app is running.</li>
+          <li>Optional .BmMatch files opened or exported by the user. When you choose to save or export a match file, it is written to the device where the app is running (by default to the Documents/Badminton folder) and not uploaded or shared automatically.</li>
         </ul>
 
         <h2>How data is used</h2>
         <p>Match data is used only to provide analysis, scoring, undo/redo history, and report generation. Data remains local unless you choose to export a .BmMatch file or share a report.</p>
 
         <h2>Storage and offline use</h2>
-        <p>The app stores data locally in your browser or device storage so it can resume a match session and preserve state. It is designed to work offline as a Progressive Web App once installed.</p>
+        <p>The app keeps match data in its runtime memory while you use it. If you explicitly save or export a match (for example to a <strong>.BmMatch</strong> file), the file is written to the device's storage — by default we place exported files in the <strong>Documents/Badminton</strong> folder on the device where the app is running. The app operates fully offline and does not upload data unless you manually share or export a file.</p>
 
         <h2>Permissions</h2>
         <p>No location, camera, or personal account permissions are required. The app only requests storage access when saving or opening a match file.</p>
 
-        <h2>Contact</h2>
-        <p>If you have questions about privacy, contact us at <a href="mailto:BadmintomMatchCoach@gmail.com">BadmintomMatchCoach@gmail.com</a>.</p>
       </section>
     </main>
   </div>
