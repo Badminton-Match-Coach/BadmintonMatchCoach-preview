@@ -1,7 +1,7 @@
 # Badminton Match Coach
 
 ## Overview
-The Badminton Match Coach project is designed to assist badminton players and coaches in managing and analyzing matches. This web application provides a user-friendly interface for tracking scores, player statistics, and match history.
+The Badminton Match Coach project is designed to assist badminton players and coaches in managing and analyzing matches. This standalone Android app provides a user-friendly interface for tracking scores, player statistics, and match history.
 
 ## Project Structure
 ```
@@ -24,7 +24,7 @@ BadmintonMatchCoach
    ```
    cd BadmintonMatchCoach
    ```
-3. Open `index.html` in your web browser to view the application.
+3. Open the Android project in Android Studio and run it on an Android device or emulator to view the application.
 
 ## Features
 - Track match scores in real-time.
