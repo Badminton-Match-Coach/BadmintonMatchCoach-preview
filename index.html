@@ -9,65 +9,69 @@
 <body>
     <div class="page-shell">
         <header class="hero">
+            <div class="lang-switcher" role="group" aria-label="Language switcher">
+                <button class="lang-btn active" type="button" data-lang="en" aria-label="Switch to English">🇬🇧 English</button>
+                <button class="lang-btn" type="button" data-lang="sv" aria-label="Växla till svenska">🇸🇪 Svenska</button>
+            </div>
             <h1>Badminton Match Coach</h1>
-            <p>Turn your coach, teammate, or friend into a digital match analyst and get instant insight into how matches are won and lost.</p>
+            <p data-i18n="heroSubtitle">Turn your coach, teammate, or friend into a digital match analyst and get instant insight into how matches are won and lost.</p>
             <p class="nav-links">
-                <a href="analysis.html">See what the analysis looks like</a>
+                <a href="analysis.html" data-i18n="linkAnalysis">See what the analysis looks like</a>
             </p>
             <p class="nav-links">
-                <a href="play/index.html">View Play store preview</a>
+                <a href="play/index.html" data-i18n="linkPreview">View Play Store preview</a>
             </p>
         </header>
 
         <main class="container">
             <section class="card">
-                <h2>About the app</h2>
-                <p>Record your badminton match live and receive analysis as soon as the match ends—or even during the break between games.</p>
+                <h2 data-i18n="aboutTitle">About the app</h2>
+                <p data-i18n="aboutText">Record your badminton match live and receive analysis as soon as the match ends—or even during the break between games.</p>
             </section>
 
             <section class="card">
-                <h2>How it works</h2>
+                <h2 data-i18n="howTitle">How it works</h2>
                 <ol>
-                    <li><strong>Hand over your device</strong><br>Give your phone or Android tablet to your coach, teammate, or friend so they can operate the app while you focus on playing.</li>
-                    <li><strong>Record the match</strong><br>Your assistant can tap how each rally ends by taping the serve, and where the final shot was hit from, where it landed, the rally outcome with a shot type.</li>
-                    <li><strong>Get instant analysis</strong><br>As soon as the match is over, or during a break between games, you will see a complete breakdown of how you won and lost points.</li>
+                    <li><strong data-i18n="step1Title">Hand over your device</strong><br><span data-i18n="step1Text">Give your phone or Android tablet to your coach, teammate, or friend so they can operate the app while you focus on playing.</span></li>
+                    <li><strong data-i18n="step2Title">Record the match</strong><br><span data-i18n="step2Text">Your assistant can tap how each rally ends by tapping the serve, and where the final shot was hit from, where it landed, the rally outcome with a shot type.</span></li>
+                    <li><strong data-i18n="step3Title">Get instant analysis</strong><br><span data-i18n="step3Text">As soon as the match is over, or during a break between games, you will see a complete breakdown of how you won and lost points.</span></li>
                 </ol>
             </section>
 
             <section class="card">
-                <h2>Winning patterns and tactics</h2>
-                <p>Which of your shots—smash, net play, drop shot, or something else—is winning you the most points today?</p>
-                <p>Can you use them more effectively?</p>
-                <p>Where do they win most of their points?</p>
-                <p>How can you respond better?</p>
+                <h2 data-i18n="patternsTitle">Winning patterns and tactics</h2>
+                <p data-i18n="patternsText1">Which of your shots—smash, net play, drop shot, or something else—is winning you the most points today?</p>
+                <p data-i18n="patternsText2">Can you use them more effectively?</p>
+                <p data-i18n="patternsText3">Where do they win most of their points?</p>
+                <p data-i18n="patternsText4">How can you respond better?</p>
             </section>
 
             <section class="card">
-                <h2>Discover your patterns</h2>
+                <h2 data-i18n="discoverTitle">Discover your patterns</h2>
                 <div class="grid">
                     <div class="panel">
-                        <h3>Your mistakes</h3>
-                        <p>Do you make more unforced errors at the beginning or end of games?</p>
-                        <p>Which shot types cause the most problems?</p>
+                        <h3 data-i18n="mistakesTitle">Your mistakes</h3>
+                        <p data-i18n="mistakesText1">Do you make more unforced errors at the beginning or end of games?</p>
+                        <p data-i18n="mistakesText2">Which shot types cause the most problems?</p>
                     </div>
                     <div class="panel">
-                        <h3>Opponent's mistakes</h3>
-                        <p>Do they make more mistakes from specific court positions or in longer rallies?</p>
+                        <h3 data-i18n="opponentTitle">Opponent's mistakes</h3>
+                        <p data-i18n="opponentText">Do they make more mistakes from specific court positions or in longer rallies?</p>
                     </div>
                 </div>
             </section>
 
             <section class="card">
-                <h2>Match analysis</h2>
-                <p>At any point during the match, between games, or afterward, you can view detailed statistics, including:</p>
+                <h2 data-i18n="analysisTitle">Match analysis</h2>
+                <p data-i18n="analysisIntro">At any point during the match, between games, or afterward, you can view detailed statistics, including:</p>
                 <ul>
-                    <li>Heat maps</li>
-                    <li>Shot type statistics</li>
-                    <li>Rally length statistics</li>
-                    <li>Every rally played during the match</li>
+                    <li data-i18n="analysisItem1">Heat maps</li>
+                    <li data-i18n="analysisItem2">Shot type statistics</li>
+                    <li data-i18n="analysisItem3">Rally length statistics</li>
+                    <li data-i18n="analysisItem4">Every rally played during the match</li>
                 </ul>
-                <p><strong>Detailed rally analysis</strong> lets you open any rally and see exactly how it unfolded shot by shot.</p>
-                <p><strong>Share your analysis</strong> using your device's Share function to export it as a BmMatch file or as an HTML report that can be shared with coaches or teammates.</p>
+                <p><strong data-i18n="detailedAnalysis">Detailed rally analysis</strong> <span data-i18n="detailedAnalysisText">lets you open any rally and see exactly how it unfolded shot by shot.</span></p>
+                <p><strong data-i18n="shareAnalysis">Share your analysis</strong> <span data-i18n="shareAnalysisText">using your device's Share function to export it as a BmMatch file or as an HTML report that can be shared with coaches or teammates.</span></p>
             </section>
 
         </main>

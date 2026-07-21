@@ -9,40 +9,46 @@
 <body>
     <div class="page-shell">
         <header class="hero">
-            <h1>Analysis</h1>
-            <p>See how match patterns become clear when you review a match in detail.</p>
+            <div class="lang-switcher" role="group" aria-label="Language switcher">
+                <button class="lang-btn active" type="button" data-lang="en" aria-label="Switch to English">🇬🇧 English</button>
+                <button class="lang-btn" type="button" data-lang="sv" aria-label="Växla till svenska">🇸🇪 Svenska</button>
+            </div>
+            <h1 data-i18n="analysisPageTitle">Analysis</h1>
+            <p data-i18n="analysisPageSubtitle">See how match patterns become clear when you review a match in detail.</p>
         </header>
 
         <main class="container">
             <section class="card">
-                <h2>Why this matters</h2>
-                <p>Ever wondered why you keep losing to the same player? A detailed breakdown can reveal the patterns behind those results.</p>
+                <h2 data-i18n="analysisWhyTitle">Why this matters</h2>
+                <p data-i18n="analysisWhyText">Ever wondered why you keep losing to the same player? A detailed breakdown can reveal the patterns behind those results.</p>
             </section>
 
             <section class="card">
-                <h2>Example report</h2>
-                <p>Here is an example of a match between the Olympic Champion and the reigning World Champion. The same type of analysis is available in the app during and after a match.</p>
+                <h2 data-i18n="analysisExampleTitle">Example report</h2>
+                <p data-i18n="analysisExampleText">Here is an example of a match between the Olympic Champion and the reigning World Champion. The same type of analysis is available in the app during and after a match.</p>
                 <p class="nav-links">
-                    <a href="BadmintonMatchCoachExampleMatch.html" target="_blank" rel="noopener noreferrer">Open Men's single match analysis</a>
+                    <a href="BadmintonMatchCoachExampleMatch.html" target="_blank" rel="noopener noreferrer" data-i18n="analysisLinkMen">Open Men's single match analysis</a>
                 </p>
                 <p class="nav-links">
-                    <a href="Double_Final_Example.html" target="_blank" rel="noopener noreferrer">Open Mixed match analysis</a>
+                    <a href="Double_Final_Example.html" target="_blank" rel="noopener noreferrer" data-i18n="analysisLinkMixed">Open Mixed match analysis</a>
                 </p>
             </section>
 
             <section class="card">
-                <h2>What you can learn</h2>
+                <h2 data-i18n="analysisLearnTitle">What you can learn</h2>
                 <ul>
-                    <li>Which patterns repeat most often</li>
-                    <li>Where your points are won and lost</li>
-                    <li>How tactical choices change the flow of a match</li>
+                    <li data-i18n="analysisLearnItem1">Which patterns repeat most often</li>
+                    <li data-i18n="analysisLearnItem2">Where your points are won and lost</li>
+                    <li data-i18n="analysisLearnItem3">How tactical choices change the flow of a match</li>
                 </ul>
             </section>
         </main>
 
         <footer>
-            <p><a href="index.html">Back to home</a></p>
+            <p><a href="index.html" data-i18n="analysisBackHome">Back to home</a></p>
         </footer>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
