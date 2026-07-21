@@ -1,0 +1,3 @@
+- [x] Add `js/main.js` to `play/privacy.html`
+- [x] Add `js/main.js` to `play/index.html`
+- [x] Verify language switching works (manual)
