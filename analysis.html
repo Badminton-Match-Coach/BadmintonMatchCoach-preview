@@ -9,9 +9,12 @@
 <body>
     <div class="page-shell">
         <header class="hero">
-            <div class="lang-switcher" role="group" aria-label="Language switcher">
-                <button class="lang-btn active" type="button" data-lang="en" aria-label="Switch to English">🇬🇧 English</button>
-                <button class="lang-btn" type="button" data-lang="sv" aria-label="Växla till svenska">🇸🇪 Svenska</button>
+            <div class="header-controls">
+                <a href="index.html" class="back-home-btn" data-i18n="analysisBackHome">Back to home</a>
+                <div class="lang-switcher" role="group" aria-label="Language switcher">
+                    <button class="lang-btn active" type="button" data-lang="en" aria-label="Switch to English">🇬🇧 English</button>
+                    <button class="lang-btn" type="button" data-lang="sv" aria-label="Växla till svenska">🇸🇪 Svenska</button>
+                </div>
             </div>
             <h1 data-i18n="analysisPageTitle">Analysis</h1>
             <p data-i18n="analysisPageSubtitle">See how match patterns become clear when you review a match in detail.</p>
@@ -24,11 +27,12 @@
             </section>
 
             <section class="card">
-                <h2 data-i18n="analysisExampleTitle">Example report</h2>
+                <h2 data-i18n="analysisExampleTitle">Example Analysis</h2>
                 <p data-i18n="analysisExampleText">Here is an example of a match between the Olympic Champion and the reigning World Champion. The same type of analysis is available in the app during and after a match.</p>
                 <p class="nav-links">
                     <a href="BadmintonMatchCoachExampleMatch.html" target="_blank" rel="noopener noreferrer" data-i18n="analysisLinkMen">Open Men's single match analysis</a>
                 </p>
+                <p data-i18n="analysisDoublesIntro">Below is an example of how a doubles match analysis is displayed.</p>
                 <p class="nav-links">
                     <a href="Double_Final_Example.html" target="_blank" rel="noopener noreferrer" data-i18n="analysisLinkMixed">Open Mixed match analysis</a>
                 </p>
@@ -45,7 +49,6 @@
         </main>
 
         <footer>
-            <p><a href="index.html" data-i18n="analysisBackHome">Back to home</a></p>
         </footer>
     </div>
 
