@@ -96,6 +96,19 @@ body {
     color: var(--accent);
 }
 
+.hero-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.hero-title-row h1 {
+    margin: 0;
+}
+
 .hero p {
     margin: 0;
     font-size: clamp(0.95rem, 2.2vw, 1.05rem);
@@ -171,6 +184,28 @@ footer {
 
 .nav-links a:hover {
     text-decoration: underline;
+}
+
+.faq-list {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+}
+
+.faq-item h3 {
+    margin: 0 0 0.35rem;
+    color: var(--accent-2);
+    font-size: 1.02rem;
+}
+
+.faq-item p {
+    margin: 0;
 }
 
 footer a {
@@ -395,6 +430,17 @@ footer a:hover {
     color: #1e293b;
     border-radius: 999px;
     padding: 8px 12px;
+}
+
+.preview-warning {
+    margin: 0;
+    background: #fff7e6;
+    color: #8a4b00;
+    border: 1px solid #ffd9a3;
+    border-radius: 12px;
+    padding: 0.65rem 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .screenshot-grid {

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Badminton Match Coach</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="header-controls">
+                <a href="index.html" class="back-home-btn" data-faq-i18n="backHome">Back to home</a>
+                <div class="lang-switcher" role="group" aria-label="Language switcher">
+                    <button class="lang-btn active" type="button" data-lang="en" aria-label="Switch to English">🇬🇧 English</button>
+                    <button class="lang-btn" type="button" data-lang="sv" aria-label="Växla till svenska">🇸🇪 Svenska</button>
+                </div>
+            </div>
+            <h1 data-faq-i18n="title">Frequently Asked Questions</h1>
+            <p data-faq-i18n="subtitle">Common questions and practical answers for using Badminton Match Coach.</p>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <div id="faq-list" class="faq-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2020-2026 Badminton Match Coach</p>
+        </footer>
+    </div>
+
+    <script src="js/faq-data.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>
